@@ -383,5 +383,6 @@ func (r *pdfReader) peek() ([]byte, error) {
 }
 
 func (r *pdfReader) buildFpdf() (f *Fpdf, err error) {
+	fmt.Println(r.xrefTable)
 	return f, err
 }
